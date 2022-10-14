@@ -3,14 +3,17 @@
 /**
 * main - Entry point
 *
-* Description: print alphabets in lower case
-*
+* Description: print single digit numbers using putchar only
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-for (int i = 97; i <= 122; i++)
+int i = 48;
+while (i < 58)
+{
 putchar(i);
-putchar(10);
+i++;
+}
+putchar('\n');
 return (0);
 }
