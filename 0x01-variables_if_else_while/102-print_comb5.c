@@ -1,0 +1,44 @@
+#include <stdio.h>
+/**
+*main - print all possible unique and non-repeating combination of four digits
+*Return: Always 0 (Success)
+*/
+int main(void)
+{
+int a_ = 0;
+int b_ = 0;
+int c_ = 0;
+int d_ = 1;
+while (a_ <= 9)
+{
+while (b_ <= 9)
+{
+while (c_ <= 9)
+{
+while (d_ <= 9)
+{
+putchar(a_ + '0');
+putchar(b_ + '0');
+putchar(' ');
+putchar(c_ + '0');
+putchar(d_ + '0');
+if (a_ != 9 || b_ != 8 || c_ != 9 || d_ != 9)
+putchar(',');
+putchar(' ');
+d_++;
+}
+c_++;
+d_ = b_ + 1;
+}
+b_++;
+c_ = a_;
+d_ = b_ + 1;
+}
+a_++;
+b_ = 0;
+c_ = a_;
+d_ = b_ + 1;
+}
+putchar('\n');
+return (0);
+}
