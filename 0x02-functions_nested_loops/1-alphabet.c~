@@ -1,0 +1,16 @@
+#include "main.h"
+/**
+ *main -main function
+ *
+ *Return: void
+ */
+void print_alphabet(void)
+{
+char text = 'a';
+while (text < 'z')
+{
+_putchar(text);
+text++;
+}
+_putchar('\n');
+}
