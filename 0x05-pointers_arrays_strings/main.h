@@ -41,4 +41,10 @@ void print_rev(char *s);
  * Return: void
  */
 void rev_string(char *s);
+/**
+ * puts2 - print alternating chars of string
+ * @str: string
+ * Return: void
+ */
+void puts2(char *str);
 #endif
