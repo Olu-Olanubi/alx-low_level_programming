@@ -35,4 +35,10 @@ void _puts(char *str);
  * @s: string to reverse
  */
 void print_rev(char *s);
+/**
+ * rev_string - reverse string
+ * @s: string
+ * Return: void
+ */
+void rev_string(char *s);
 #endif
