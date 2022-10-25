@@ -14,7 +14,7 @@ i++;
 if (i % 2 == 0)
 half = i / 2;
 else
-half = (i - 1) / 2;
+half = (i / 2) + 1;
 while (half <= i - 1)
 {
 _putchar(str[half]);
