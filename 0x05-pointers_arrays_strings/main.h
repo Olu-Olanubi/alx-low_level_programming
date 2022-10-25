@@ -53,4 +53,5 @@ void puts2(char *str);
  * Return: void
  */
 void puts_half(char *str);
+void print_array(int *a, int n);
 #endif
