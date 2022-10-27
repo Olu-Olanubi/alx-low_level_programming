@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - changes all lowercase of string to uppercase
- * @s: string array
+ * @c: string array
  * Return: string array
  */
 char *string_toupper(char *c)
