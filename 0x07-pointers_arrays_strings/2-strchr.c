@@ -1,7 +1,7 @@
 #include "main.h"
 #define NULL 0
 /**
- *_memcpy - locates a character in a string
+ *_strchr - locates a character in a string
  * @s: string to be searched through
  * @c: character to be searched for
  * Return: pointer to the first occurrence of c in s or NULL if not found
