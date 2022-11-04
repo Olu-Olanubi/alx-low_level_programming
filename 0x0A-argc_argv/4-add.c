@@ -13,7 +13,8 @@ int sum = 0;
 int i;
 for (i = 1; i < argc; i++)
 {
-/** If one of the number contains symbols that are not digits,
+/**
+ *  If one of the number contains symbols that are not digits,
 * print Error, followed by a new line, and return 1
 */
 if (*argv[i] < '0' || *argv[i] > '9')
