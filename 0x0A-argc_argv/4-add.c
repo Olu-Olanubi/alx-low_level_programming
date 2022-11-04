@@ -13,7 +13,7 @@ int sum = 0;
 int i;
 for (i = 1; i < argc; i++)
 {
-/*If one of the number contains symbols that are not digits, print Error and return 1*/
+/*If one of the numbers is not digits, print Error and return 1*/
 if (*argv[i] < '0' || *argv[i] > '9')
 {
 printf("Error\n");
