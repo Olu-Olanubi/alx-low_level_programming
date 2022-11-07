@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup - returns the pointer to a new string, which is copy of the string str
+ * _strdup - returns the pointer to a new string, which is copy of str
  * @str: argument into function
  * Return: pointer to a new string on success, NULL otherwise
  */
@@ -21,7 +21,7 @@ while (str[length] != '\0')
 length++;
 }
 length++; /*Allows lenght to count null terminator in string*/
-new_str = malloc(length * sizeof(char));
+new_str = malloc(length *sizeof(char));
 if (new_str == NULL)
 {
 return (NULL);
