@@ -14,7 +14,6 @@ if (str == NULL)
 {
 return (NULL);
 }
-
 /*Get length of str*/
 length = 0;
 while (str[length] != '\0')
@@ -29,7 +28,7 @@ return (NULL);
 }
 for (i = 0; i < length; i++)
 {
-    new_str[i] = str[i];
+new_str[i] = str[i];
 }
 new_str[i] = '\0';
 return (new_str);
