@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * free_grid - frees a 2D array
- * @grid: grid to be freed 
- * @height: height of array
- * Return: pointer to 2D array
- */
+* free_grid - frees a 2D array
+* @grid: grid to be freed
+* @height: height of array
+* Return: pointer to 2D array
+*/
 void free_grid(int **grid, int height)
 {
 int i;
