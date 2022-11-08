@@ -26,7 +26,7 @@ len2++;
 }
 strconcat = malloc(1 + (len1 + len2) *sizeof(char));
 if (strconcat == NULL)
-return NULL;
+return (NULL);
 i = 0;
 while (i < len1)
 {
