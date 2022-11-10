@@ -24,7 +24,7 @@ while (str[i] != '\0')
 if (str[i] != ' ' && str[i] != '\t')
 word_count += 1;
 if (str[i] == ' ' || str[i] == '\t')
-if (!((str[i+1] == ' ') || (str[i + 1] == '\t') || (str[i + 1] == '\0')))
+if (!((str[i + 1] == ' ') || (str[i + 1] == '\t') || (str[i + 1] == '\0')))
 if (word_count > 0)
 {
 spaces++;
@@ -35,7 +35,7 @@ i++;
 if (spaces == 0)
 return (NULL);
 /* allocate memory for array of words */
-grid = malloc((spaces + 2) *sizeof(char *));
+grid = malloc((spaces + 2) * sizeof(char * ));
 /* validate memory */
 if (grid == NULL)
 return (NULL);
@@ -50,11 +50,13 @@ while (str[i] != '\0')
 {
 if (str[i] != ' ' && str[i] != '\t')
 word_count++;
-if ((str[i] == ' ' || str[i] == '\t') && (str[i + 1] != ' ' || str[i + 1] != '\t' || str[i + 1] == '\0') && (word_count > 0))
+if (str[i] == ' ' || str[i] == '\t')
+if (str[i + 1] != ' ' || str[i + 1] != '\t' || str[i + 1] == '\0')
+if (word_count > 0)
 {
-/* Create an column array for each full word */
-grid[words] = malloc((word_count + 1) *sizeof(int));
-/* validate memory created*/
+/* Create a column array for each full word */
+grid[words] = malloc((word_count + 1) * sizeof(int));
+/* validate memory created */
 if (grid[words] == NULL)
 {
 for (words = 0; words < (spaces + 2); words++)
