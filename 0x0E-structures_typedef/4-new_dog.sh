@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-new_dog.c -o e
+./e
