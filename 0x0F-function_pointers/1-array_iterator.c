@@ -13,7 +13,7 @@ size_t i;
 if (array == NULL || action == NULL)
 return;
 i = 0;
-while(i < size)
+while (i < size)
 {
 action(array[i]);
 i++;
