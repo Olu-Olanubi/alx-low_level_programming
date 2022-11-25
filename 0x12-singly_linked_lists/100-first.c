@@ -1,5 +1,6 @@
 #include "lists.h"
-/**before_main - print before the main function
+/**
+ * before_main - print before the main function
  * Return: void
  */
 void before_main(void)
