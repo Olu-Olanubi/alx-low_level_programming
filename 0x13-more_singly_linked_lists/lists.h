@@ -37,4 +37,5 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 void __attribute__((constructor)) before_main(void);
 size_t print_listint(const listint_t *h);
+size_t listint_len(const listint_t *h);
 #endif
