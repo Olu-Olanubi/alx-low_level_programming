@@ -1,4 +1,5 @@
-#include 'main.h'
+#include "main.h"
+#include <stdlib.h>
 /**
  * binary_to_uint - convert binary to unsigned int
 * @b: binary
@@ -22,7 +23,7 @@ while (b[i])
 if ((b[i] != '0') && (b[i] != '1'))
 return (sum);
 if (b[i] == '1')
-num += (1 * (1 << len));
+sum += (1 * (1 << len));
 i++;
 len--;
 }
