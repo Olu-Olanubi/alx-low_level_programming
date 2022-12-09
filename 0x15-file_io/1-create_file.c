@@ -24,14 +24,11 @@ int create_file(const char *filename, char *text_content)
 int fd;
 unsigned int length;
 ssize_t bytes_written;
-//check that filename is not NULL
 if (filename == NULL)
 return (-1);
 fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-//check that file is created
 if (fd == -1)
 return (-1);
-//check if text_content is NULL, else execute
 if (text_content == NULL)
 {
 length = 0;
