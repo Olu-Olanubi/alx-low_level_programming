@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-create_file.c -o b
+./b hello world
